@@ -10,8 +10,13 @@
     <!-- endbuild -->
   </head>
   <body>
-    <h1>'Allo, 'Allo!</h1>
-
+    <div class="template-string">
+      <h1 class="tempalte-string__header">Tempalte String</h1>
+      <p class="template-string__desc">You can enter a string which contains the characters %s that will be replaced by the magnet link before copying e.g. 'webtorrent download "$s" --vlc' </p>
+      <input type="text" class="template-string__input" id="templateString_input" placeholder="Template String" >
+      <input type="button" class="template-string__save" id="templateString_button" value="Save">
+      <div class="template-string__status" id="templateString_status"></div>
+    </div>
     <!-- build:js scripts/options-vendor.js -->
     <!-- bower:js -->
     <!-- endbower -->
